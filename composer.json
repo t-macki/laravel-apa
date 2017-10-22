@@ -1,0 +1,42 @@
+{
+    "name": "macki/laravel-apa",
+    "description": "Amazon Product Advertising API library for Laravel5",
+    "keywords": ["amazon", "laravel5"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tetsuo Makino",
+            "email": "beyond.prep@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "illuminate/support": "5.*",
+        "guzzlehttp/guzzle": "^6.2",
+        "exeu/apai-io": "^2.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "6.*",
+        "mockery/mockery": "0.9.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "Macki\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Macki\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Macki\\Providers\\AmazonProductApiServiceProvider"
+            ],
+            "aliases": {
+                "AmazonProduct": "Macki\\Facades\\AmazonProductApi"
+            }
+        }
+    }
+}
