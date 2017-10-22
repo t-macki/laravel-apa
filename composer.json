@@ -1,7 +1,7 @@
 {
     "name": "macki/laravel-apa",
     "description": "Amazon Product Advertising API library for Laravel5",
-    "keywords": ["amazon", "laravel5"],
+    "keywords": ["amazon", "laravel", "laravel5", "laravel5"],
     "license": "MIT",
     "authors": [
         {
